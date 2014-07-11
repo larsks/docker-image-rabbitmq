@@ -12,4 +12,4 @@ ADD rabbitmq.config /etc/rabbitmq/
 ADD rabbitmq-env.conf /etc/rabbitmq/
 
 EXPOSE 5672
-
+VOLUME /srv/rabbitmq

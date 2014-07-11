@@ -1,4 +1,6 @@
 #!/bin/sh
 
+mkdir -p /srv/rabbitmq/log
+chown -R rabbitmq:rabbitmq /srv/rabbitmq/log
 exec rabbitmq-server
 
