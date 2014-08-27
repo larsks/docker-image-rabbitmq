@@ -1,10 +1,8 @@
-FROM larsks/runit
-MAINTAINER lars@oddbit.com
+FROM larsks/runit:fedora20
+MAINTAINER Lars Kellogg-Stedman <lars@oddbit.com>
 
 RUN yum -y install \
-	git \
 	crudini \
-	yum-utils \
 	rabbitmq-server
 
 RUN mkdir -p /etc/rabbitmq
